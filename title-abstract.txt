@@ -1,5 +1,9 @@
 Title:
-<MY SUPER AWESOME PROJECT TITLE>
+Evaluating Graph Transformers for Scalable Social Media Recommendations
 
 Abstract:
-<MY SUPER AWESOME PROJECT ABSTRACT>
+We develop a scalable recommendation system for Bluesky, a decentralized social network on the AT Protocol. Traditional popularity-based methods relying on post likes lack personalization and suffer from temporal bias. To address this, we implement GraphRec, a graph-based model leveraging user-post interactions.
+
+Our two-stage pipeline includes candidate generation using collaborative filtering and consumer-producer embeddings, followed by ranking with GraphRec, incorporating transformers and temporal graph learning. A patching strategy improves efficiency for scalability.
+
+We discuss challenges in offline evaluation and real-world deployment. Future work includes optimizing real-time inference and multi-interest embeddings.
