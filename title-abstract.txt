@@ -2,8 +2,4 @@ Title:
 Evaluating Graph Transformers for Scalable Social Media Recommendations
 
 Abstract:
-We develop a scalable recommendation system for Bluesky, a decentralized social network on the AT Protocol. Traditional popularity-based methods relying on post likes lack personalization and suffer from temporal bias. To address this, we implement GraphRec, a graph-based model leveraging user-post interactions.
-
-Our two-stage pipeline includes candidate generation using collaborative filtering and consumer-producer embeddings, followed by ranking with GraphRec, incorporating transformers and temporal graph learning. A patching strategy improves efficiency for scalability.
-
-We discuss challenges in offline evaluation and real-world deployment. Future work includes optimizing real-time inference and multi-interest embeddings.
+Bluesky is a decentralized social media platform similar to Twitter, where the data on the network is open for access to everyone. Compared to other rec- ommendation datasets like Last.fm or MovieLens, social media interactions can evolve rapidly, requiring models to adapt to changing user preferences over time. Traditional collaborative filtering requires matrix factorization on the en- tire user-item rating/interaction matrix, requiring periodic recomputation. This may work well on music or movie recommendations, but for a social media site like Bluesky, a scalable way to compute and update embeddings for in real- time is needed. We demonstrate a simple, scalable framework for computing embeddings for any social network, and also show a Graph Transformer-based re-ranking model that refines rankings using both graph structure and temporal information.
